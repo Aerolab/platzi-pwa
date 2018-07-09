@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +27,23 @@ header {
 }
 header a {
   color: orange;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+}
+header a.logo {
+  color: orange;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+}
+header a.timerLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 15px;
   font-size: 22px;
   font-weight: normal;
   text-decoration: none;
@@ -137,17 +155,46 @@ main {
 .Timer {
   padding: 15px;
   background: white;
-  display: flex;
-  flex-direction: row;
   font-size: 2em;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 .Timer .name {
-  padding-right: 1em;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
-.Timer input, .Timer button {
+.Timer .center {
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+.Timer input {
+  display: block;
   font-size: 1em;
+  border: 2px solid orange;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin: 30px auto;
+  text-align: center;
 }
-
+.Timer button {
+  display: block;
+  font-size: 1em;
+  color: white;
+  border: 2px solid orange;
+  background: orange;
+  border-radius: 3px;
+  margin: 20px auto;
+}
+.Timer .timeLeft {
+  margin-top: 30px;
+  font-size: 3em;
+  text-align: center;
+}
 
 .message {
   padding: 100px 30px;
