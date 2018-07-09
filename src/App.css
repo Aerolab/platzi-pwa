@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  background: #f0f0f0;
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  padding: 15px;
+  line-height: 30px;
+  z-index: 9999;
+  font-family: 'Pacifico', sans-serif;
+  text-align: center;
+  background: white;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+header a {
+  color: orange;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+}
+header a.logo {
+  color: orange;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+}
+header a.timerLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 60px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.recipes {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.recipe {
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+}
+.recipe .bg {
+  display: block;
+  padding-bottom: 40%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.recipe .info {
+  display: block;
+  padding: 20px;
+  background: orange;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.recipe h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+
+.Recipe .hero {
+  display: block;
+  height: 30vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.Recipe .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: orange;
+  color: #fff;
+  padding: 20px;
+}
+.Recipe .title .info {
+  flex: 1 1 auto;
+}
+.Recipe .title h1 {
+  margin: 0;
+}
+.Recipe .title p {
+  margin: 0;
+}
+.Recipe a.share {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+.Recipe .ingredients {
+  padding: 20px;
+}
+.Recipe .ingredients li {
+  line-height: 140%;
+}
+
+
+.Recipe .instructions {
+  padding: 20px;
+}
+.Recipe .step {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.Recipe .step .number {
+  font-size: 32px;
+  flex: 0 1 1.3em;
+}
+.Recipe .step .text {
+  flex: 1 0;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+
+.Timer {
+  padding: 15px;
+  background: white;
+  font-size: 2em;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.Timer .name {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.Timer .center {
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+.Timer input {
+  display: block;
+  font-size: 1em;
+  border: 2px solid orange;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin: 30px auto;
+  text-align: center;
+}
+.Timer button {
+  display: block;
+  font-size: 1em;
+  color: white;
+  border: 2px solid orange;
+  background: orange;
+  border-radius: 3px;
+  margin: 20px auto;
+}
+.Timer .timeLeft {
+  margin-top: 30px;
+  font-size: 3em;
+  text-align: center;
+}
+
+.message {
+  padding: 100px 30px;
+  text-align: center;
+  font-size: 1.2em;
+}
