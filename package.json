@@ -8,13 +8,16 @@
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "serve": "^9.1.0"
+    "serve": "^9.2.0",
+    "workbox-webpack-plugin": "^3.3.1",
+    "react-app-rewire-workbox": "^2.0.1",
+    "react-app-rewired": "^1.5.2"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve ./build -s -p ${PORT:-4000}",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "dev": "react-app-rewired start",
+    "start": "serve ./build -s -p ${PORT:-5000}",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
