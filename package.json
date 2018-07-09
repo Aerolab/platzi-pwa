@@ -4,14 +4,15 @@
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
+    "react-app-rewire-workbox": "^2.0.1",
+    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.4.1",
+    "react-ga": "^2.5.3",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "serve": "^9.2.0",
-    "workbox-webpack-plugin": "^3.3.1",
-    "react-app-rewire-workbox": "^2.0.1",
-    "react-app-rewired": "^1.5.2"
+    "workbox-webpack-plugin": "^3.3.1"
   },
   "scripts": {
     "dev": "react-app-rewired start",
