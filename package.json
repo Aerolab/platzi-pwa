@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "ngrok": "^4.3.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
@@ -12,7 +14,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve ./build -s -p ${PORT:-4000}",
+    "start": "serve ./build -s -l 5000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
